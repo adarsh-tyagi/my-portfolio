@@ -2,6 +2,7 @@
   --primaryColor: #017056;
   --secondaryColor: #547a72;
   --backgroundColor: #f0f7f5;
+  --darkPrimaryColor: #002e20;
 }
 
 * {
@@ -59,6 +60,11 @@ a {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   font-weight: bold;
+  transition: font-size 2s;
+}
+.nav-bar div:hover{
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 header {
@@ -124,6 +130,9 @@ section {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.projects a:hover{
+  background-color: var(--darkPrimaryColor);
+}
 
 .blogs {
   background-color: var(--backgroundColor);
@@ -149,6 +158,10 @@ section {
   border-radius: 8px;
   margin-top: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.blogs a:hover{
+  background-color: var(--primaryColor);
+  color: white;
 }
 
 footer {
@@ -194,6 +207,9 @@ footer li {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.blogodd a:hover{
+  background-color: var(--darkPrimaryColor);
+}
 
 .blogeven div {
   margin: auto;
@@ -214,6 +230,9 @@ footer li {
   margin-top: 1rem;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.blogeven a:hover{
+  background-color: var(--darkPrimaryColor);
 }
 
 .projectList {
@@ -239,6 +258,10 @@ footer li {
   border-radius: 8px;
   margin-top: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.projectList a:hover{
+  background-color: var(--primaryColor);
+  color: white;
 }
 
 .projectList h1 {
