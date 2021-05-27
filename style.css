@@ -60,11 +60,15 @@ a {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   font-weight: bold;
-  transition: font-size 2s;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  
 }
-.nav-bar div:hover{
-  text-transform: uppercase;
-  font-size: 1.2rem;
+@keyframes spin{
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
 }
 
 header {
